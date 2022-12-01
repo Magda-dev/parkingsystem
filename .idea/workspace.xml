@@ -44,7 +44,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/magda/Documents/GitHub/parkingsystem/src/com",
+    "last_opened_file_path": "C:/Users/magda/Documents/GitHub/parkingsystem",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -65,7 +65,6 @@
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../../../../Program Files/Eclipse Adoptium/jdk-11.0.16.101-hotspot" />
       <option name="MAIN_CLASS_NAME" value="com.parkit.parkingsystem.App" />
-      <module name="parking-system" />
       <selectedOptions>
         <option name="environmentVariables" visible="false" />
       </selectedOptions>

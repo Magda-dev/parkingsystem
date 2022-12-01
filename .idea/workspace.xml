@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1ebb1b08-7321-42a3-b963-8630a80c2290" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="C:\Users\magda\Documents\SALESFORCE\Openclassroomsd\Projet #5" />
+  </component>
+  <component name="FindBugs-IDEA-Workspace">
+    <exportBugCollectionDirectory>C:\Users\magda\Documents\GitHub\parkingsystem\reports</exportBugCollectionDirectory>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/test/java/com/parkit/parkingsystem/FareCalculatorServiceTest.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2HMgPjWop9Kjc7hsTFhJOeKBr7n" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/magda/Documents/GitHub/parkingsystem/src/com",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\magda\Documents\GitHub\parkingsystem\src\com" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="App" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../../../../Program Files/Eclipse Adoptium/jdk-11.0.16.101-hotspot" />
+      <option name="MAIN_CLASS_NAME" value="com.parkit.parkingsystem.App" />
+      <module name="parking-system" />
+      <selectedOptions>
+        <option name="environmentVariables" visible="false" />
+      </selectedOptions>
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.parkit.parkingsystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in parking-system (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="parking-system" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in parking-system (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="parking-system" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in parking-system" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="parking-system" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../../../../Program Files/Java/jdk-19/bin" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FareCalculatorServiceTest.calculateFareForReturningCustomersCBike" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="parking-system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.parkit.parkingsystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.parkit.parkingsystem" />
+      <option name="MAIN_CLASS_NAME" value="com.parkit.parkingsystem.FareCalculatorServiceTest" />
+      <option name="METHOD_NAME" value="calculateFareForReturningCustomersCBike" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.App" />
+      <item itemvalue="JUnit.All in parking-system" />
+      <item itemvalue="JUnit.All in parking-system (1)" />
+      <item itemvalue="JUnit.All in parking-system (2)" />
+      <item itemvalue="JUnit.FareCalculatorServiceTest.calculateFareForReturningCustomersCBike" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.All in parking-system (2)" />
+        <item itemvalue="JUnit.All in parking-system (1)" />
+        <item itemvalue="JUnit.All in parking-system" />
+        <item itemvalue="JUnit.FareCalculatorServiceTest.calculateFareForReturningCustomersCBike" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1ebb1b08-7321-42a3-b963-8630a80c2290" name="Changes" comment="" />
+      <created>1668100344341</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668100344341</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="5" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/parkingsystem$FareCalculatorServiceTest_calculateFareCarWithMoreThanADayParkingTime.ic" NAME="FareCalculatorServiceTest.calculateFareCarWithMoreThanADayParkingTime Coverage Results" MODIFIED="1669124976088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.parkit.parkingsystem.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/parkingsystem$FareCalculatorServiceTest_calculateFareBikeWithLessThanOneHourParkingTime.ic" NAME="FareCalculatorServiceTest.calculateFareBikeWithLessThanOneHourParkingTime Coverage Results" MODIFIED="1669127470478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.parkit.parkingsystem.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/parkingsystem$All_in_parking_system__5_.ic" NAME="All in parking-system (5) Coverage Results" MODIFIED="1669806097746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/parkingsystem$All_in_parking_system__4_.ic" NAME="All in parking-system (4) Coverage Results" MODIFIED="1669805910887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/parkingsystem$All_in_parking_system.ic" NAME="All in parking-system Coverage Results" MODIFIED="1669806365272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/parkingsystem$App.ic" NAME="App Coverage Results" MODIFIED="1669806349891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.parkit.parkingsystem.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/parkingsystem$FareCalculatorServiceTest_calculateFareBikeWithMoreThanADayParkingTime.ic" NAME="FareCalculatorServiceTest.calculateFareBikeWithMoreThanADayParkingTime Coverage Results" MODIFIED="1669291962285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.parkit.parkingsystem.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/parkingsystem$FareCalculatorServiceTest.ic" NAME="FareCalculatorServiceTest Coverage Results" MODIFIED="1669309270041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.parkit.parkingsystem.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/parkingsystem$FareCalculatorServiceTest_calculateFareCarWithLessThan30Min.ic" NAME="FareCalculatorServiceTest.calculateFareCarWithLessThan30Min Coverage Results" MODIFIED="1669127036335" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.parkit.parkingsystem.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/parkingsystem$FareCalculatorServiceTest_calculateFareCar.ic" NAME="FareCalculatorServiceTest.calculateFareCar Coverage Results" MODIFIED="1669125919840" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.parkit.parkingsystem.*</FILTER>
+    </SUITE>
+  </component>
+</project>

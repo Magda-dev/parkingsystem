@@ -1,70 +1,73 @@
 package com.parkit.parkingsystem.service;
 
 import com.parkit.parkingsystem.constants.Fare;
+import com.parkit.parkingsystem.dao.TicketDAO;
 import com.parkit.parkingsystem.model.Ticket;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
 public class FareCalculatorService {
-	public double finalPrice;
-	private double durationHours;
-	
-    public void calculateFare(Ticket ticket){
-        if( (ticket.getOutTime() == null) || (ticket.getOutTime().before(ticket.getInTime())) ){
-            throw new IllegalArgumentException("Out time provided is incorrect:"+ticket.getOutTime().toString());
+    public double finalPrice;
+
+    @SuppressFBWarnings("RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT")
+    public void calculateFare(Ticket ticket) {
+        if ((ticket.getOutTime() == null) || (ticket.getOutTime().before(ticket.getInTime()))) {
+            throw new IllegalArgumentException("Out time provided is incorrect:" + ticket.getOutTime().toString());
+        }
+
+        if((ticket.getParkingSpot().getParkingType()== null)){
+            throw new NullPointerException("Parking type is incorrect:" + ticket.getOutTime().toString());
         }
 
         long inHour = ticket.getInTime().getTime();
         long outHour = ticket.getOutTime().getTime();
-System.out.println("IN " + inHour);
-System.out.println("OUT" +outHour);
+        double totalInMinutes = (outHour-inHour)/(double)(1000*60);
 
-        //TODO: Some tests are failing here. Need to check if this logic is correct
-        durationHours = Math.floor((outHour - inHour) / 3600000);
-        System.out.println("durationHours = "+durationHours);
+        if (totalInMinutes <= 30.00) {
+            finalPrice = 0.0;
+            System.out.println("Les 30 first are on us ! You have nothing to pay, See you soon");
+            ticket.setPrice(finalPrice);
+        } else{
+            switch (ticket.getParkingSpot().getParkingType()) {
+                case CAR: {
+                    free30MinDiscount(totalInMinutes);
+                    finalPrice = (totalInMinutes * (Fare.CAR_RATE_PER_HOUR / 60));
+                    ticket.setPrice(finalPrice);
 
-      //Get remaining time from hours and convert to minutes
-        double durationMinutes = Math.floor(((outHour - inHour) % 3600000) *60);
-        System.out.println("durationMinutes = "+durationMinutes);
+                    break;
+                }
+                case BIKE: {
+                    free30MinDiscount(totalInMinutes);
+                    finalPrice = (totalInMinutes * (Fare.BIKE_RATE_PER_HOUR / 60));
+                    ticket.setPrice(finalPrice);
 
-        
-        free30Minutes(durationHours);
-        
-        
-        
-        
-        
-        
-        switch (ticket.getParkingSpot().getParkingType()){
-            case CAR: {
-            	finalPrice = durationHours * (Fare.CAR_RATE_PER_HOUR);
-            	System.out.println(finalPrice);
+                    break;
+                }
+                default:
+                    throw new IllegalArgumentException("Unknown Parking Type");
 
-                ticket.setPrice(finalPrice);
-                System.out.println("Le prix a payer pour votre voiture est donc = " + ticket.getPrice());
-                break;
             }
-            case BIKE: {
-            	finalPrice = durationHours * (Fare.BIKE_RATE_PER_HOUR);
-                ticket.setPrice(finalPrice);
-                System.out.println("Le prix a payer pour votre moto est donc = " + ticket.getPrice());
-                break;
-            }
-            default: throw new IllegalArgumentException("Unkown Parking Type");
+
         }
+        discountForReturning(ticket);
     }
 
-	private void free30Minutes(double durationHours) {
-		durationHours = this.durationHours;
-		if(durationHours <= 0.5) {
-	    	System.out.println("Vous n'avez rien à payer");
+    public void discountForReturning (Ticket ticket){
+        System.out.println(ticket.isReturning(ticket.getVehicleRegNumber()));
+        if (ticket.isReturning(ticket.getVehicleRegNumber())) {
+            ticket.setPrice(finalPrice-(finalPrice * 0.05));
+            System.out.println("Price after discount : " + ticket.getPrice());
+        }else{
+            ticket.setPrice(finalPrice);
+        }
+    }
+    public Double free30MinDiscount(double totalInMinutes){
+        totalInMinutes = totalInMinutes - 30.0;
+        return totalInMinutes;
+    }
 
-	        durationHours = 0;
-	    }else {
-	    	System.out.println("La duree de stationnement totale est de :" + durationHours + "hrs et ");
-	    	durationHours = durationHours - 0.5;
-	    	System.out.println("Nous vous faisons cadeau des 30 premières mins. Vous ne payerez que pour les " + durationHours + " hr et ");
-	    }
-		
-	}
-    
-    
+
+
+
 }
+
+

@@ -1,10 +1,12 @@
 package com.parkit.parkingsystem.util;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.Scanner;
 
+@SuppressFBWarnings("DM_DEFAULT_ENCODING")
 public class InputReaderUtil {
 
     private static Scanner scan = new Scanner(System.in);

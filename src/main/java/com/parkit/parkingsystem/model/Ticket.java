@@ -1,15 +1,23 @@
 package com.parkit.parkingsystem.model;
 
+import com.parkit.parkingsystem.dao.TicketDAO;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+
 import java.util.Calendar;
 import java.util.Date;
 
-public class Ticket {
+@SuppressFBWarnings({"EI_EXPOSE_REP", "EI_EXPOSE_REP2", "EI_EXPOSE_REP", "EI_EXPOSE_REP2"})
+public class Ticket extends TicketDAO {
     private int id;
     private ParkingSpot parkingSpot;
     private String vehicleRegNumber;
     private double price;
     private Date inTime;
     private Date outTime;
+    private Boolean returningClient;
+
+    public Ticket() {
+    }
 
     public int getId() {
         return id;
@@ -57,5 +65,24 @@ public class Ticket {
 
     public void setOutTime(Date outTime) {
         this.outTime = outTime;
+    }
+
+
+    public Boolean setReturningClient(Boolean returningClient) {
+        this.returningClient = returningClient;
+        return returningClient;
+    }
+
+    public Boolean getReturningClient() {
+        return returningClient;
+    }
+
+    public boolean isReturningClient(String vehicleRegNumber) {
+        if(isReturning(vehicleRegNumber)){
+            setReturningClient(true);
+        }else{
+            setReturningClient(false);
+        }
+        return returningClient;
     }
 }

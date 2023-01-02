@@ -21,6 +21,10 @@ public class ParkingSpot {
         this.number = number;
     }
 
+    public int getNumber() {
+        return number;
+    }
+
     public ParkingType getParkingType() {
         return parkingType;
     }

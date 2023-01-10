@@ -52,7 +52,6 @@ public class FareCalculatorService {
     }
 
     public void discountForReturning (Ticket ticket){
-        System.out.println(ticket.isReturning(ticket.getVehicleRegNumber()));
         if (ticket.isReturning(ticket.getVehicleRegNumber())) {
             ticket.setPrice(finalPrice-(finalPrice * 0.05));
             System.out.println("Price after discount : " + ticket.getPrice());

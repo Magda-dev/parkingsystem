@@ -9,6 +9,14 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
+    <url>https://github.com/Magda-dev/parkingsystem</url>
+    <distributionManagement>
+        <site>
+            <id>site</id>
+            <name>site</name>
+            <url>scp://www.yourcompany.com/www/docs/project/</url>
+        </site>
+    </distributionManagement>
     <dependencies>
         <dependency>
             <groupId>mysql</groupId>

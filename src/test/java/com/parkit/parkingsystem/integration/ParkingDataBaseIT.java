@@ -56,7 +56,8 @@ public class ParkingDataBaseIT {
         ParkingService parkingService = new ParkingService(inputReaderUtil, parkingSpotDAO, ticketDAO);
         Ticket generatedTicket = parkingService.processIncomingVehicle();
         Ticket ticketInDB = ticketDAO.getTicket(generatedTicket.getVehicleRegNumber());
-        System.out.println(ticketInDB);
+        Date inTime = new Date();
+        inTime.setTime( System.currentTimeMillis());
         assertNotNull(ticketInDB);
         ParkingSpot parkingSpot = ticketInDB.getParkingSpot();
         assertFalse(parkingSpot.isAvailable());
@@ -66,14 +67,18 @@ public class ParkingDataBaseIT {
     @Test
     public void testParkingLotExit(){
         testParkingACar();
+        //checking that outime is null before processing exiting vehicle
+        assertNull(ticketDAO.getTicket("ABCDEF").getOutTime());
+
         ParkingService parkingService = new ParkingService(inputReaderUtil, parkingSpotDAO, ticketDAO);
         Ticket generatedTicket = parkingService.processExitingVehicle();
         Ticket ticketInDB = ticketDAO.getTicket(generatedTicket.getVehicleRegNumber());
-
+        //checking that data is populated intot DB
         assertNotNull(ticketInDB);
         assertNotNull(ticketInDB.getOutTime());
-        assert ticketInDB.getPrice() >= 0;
 
+        //checking that fare calculation is correct; fare should be 0
+        assertEquals(0, ticketInDB.getPrice());
         //TODO: check that the fare generated and out time are populated correctly in the database
     }
 
